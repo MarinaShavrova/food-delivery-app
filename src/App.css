@@ -13,11 +13,51 @@ html {
 }
 
 body {
-    background: url('./components/images/background.jpg') no-repeat center;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: 'Noto Serif', serif;
+        background: url('./components/images/background.jpg') no-repeat center;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: 'Noto Serif', serif;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        left: 0;
+        top: 0;
 
+}
+
+html {
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/* Работает в Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(5, 155, 248, 0.854) rgba(255, 251, 0, 0.763);
+  
+}
+
+/* Работает в Chrome, Edge и Safari */
+*::-webkit-scrollbar {
+    width: px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(255, 251, 0, 0.763);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 20px;
+    border: 5px solid rgba(5, 155, 248, 0.854);
 }
